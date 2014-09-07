@@ -21,7 +21,7 @@
           console.log(swaggerApi);
           console.log(swaggerUi);
         }
-        $(".model-signature:contains('Hash')").parents('tr').remove();
+        $(".model-signature:contains('Hash'),.model-signature:contains('Array')").parents('tr').remove();
         $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
       },
       onFailure: function(data) {
